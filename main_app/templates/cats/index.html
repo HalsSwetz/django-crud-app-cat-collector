@@ -29,6 +29,7 @@
   {% for cat in cats %}
   <div class="card">
     <div class="card-content">
+        <a href="/cats/{{ cat.id }}">
       <div class="card-img-container">
         <img
           src="{% static 'images/sk8r-boi-cat.svg' %}"
@@ -43,6 +44,7 @@
       {% endif %}
       <p><small>{{ cat.description }}</small></p>
     </div>
+</a>
   </div>
   {% endfor %}
 </section>
