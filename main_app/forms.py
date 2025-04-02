@@ -6,7 +6,7 @@ class FeedingForm(forms.ModelForm):
         model = Feeding
         fields = ['date', 'meal']
         widgets = {
-            'date': forms.DataInput(
+            'date': forms.DateInput(
                 format=('%Y-%m-%d'),
                 attrs={
                     'placeholder': 'Select a date',
